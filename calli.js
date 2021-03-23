@@ -126,13 +126,13 @@ calli.on("message", async message => {
 });
 
 calli.on("guildCreate", guild => {
-  let channel = client.channels.cache.get("821990082218688572");
+  let channel = calli.channels.cache.get("811182316952223745");
   let embed = new MessageEmbed()
     .setColor(color)
     .setThumbnail(
       `https://media.discordapp.net/attachments/820542842082557993/821986705287413760/image0.png`
     )
-    .setAuthor(client.user.username, client.user.avatarURL())
+    .setAuthor(calli.user.username, calli.user.avatarURL())
     .setTitle(`✅ **Joined This Server!**`)
     .addField("Server Name:", `${guild.name}`)
     .addField("Server Owner:", `${guild.owner}`)
@@ -142,13 +142,13 @@ calli.on("guildCreate", guild => {
   channel.send(embed);
 });
 calli.on("guildDelete", guild => {
-  let channel = client.channels.cache.get("821990082218688572");
+  let channel = calli.channels.cache.get("811182316952223745");
   let embed = new MessageEmbed()
     .setColor(color)
     .setThumbnail(
       `https://media.discordapp.net/attachments/820542842082557993/821986705287413760/image0.png`
     )
-    .setAuthor(client.user.username, client.user.avatarURL())
+    .setAuthor(calli.user.username, calli.user.avatarURL())
     .setTitle(`❎ **Kicked Me In This Server!**`)
     .addField("Server Name:", `${guild.name}`)
     .addField("Server Owner:", `${guild.owner}`)
