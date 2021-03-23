@@ -51,12 +51,17 @@ const warn = "";
 const enabled = "<:emoji_32:798508498605965333>";
 const disabled = "<:emoji_31:798508482407039017>";
 ///////////////////////////////////////////////////////////////////////////////
+
 calli.on("ready", () => {
   console.log(`${calli.user.tag}`);
-  calli.user.setActivity(`${prefix}help - Security Is One`, {
-    Type: "Playing"
-  });
+  calli.user.setActivity(
+    `${prefix}help`,
+{
+      Type: "Playing"
+    }
+  );
 });
+
 ///////////////////////////////////////////////////////////////////////////////
 calli.on("message", async message => {
   if (message.content.startsWith(prefix + "help")) {
@@ -119,6 +124,40 @@ calli.on("message", async message => {
     );
   }
 });
+
+calli.on("guildCreate", guild => {
+  let channel = client.channels.cache.get("821990082218688572");
+  let embed = new MessageEmbed()
+    .setColor(color)
+    .setThumbnail(
+      `https://media.discordapp.net/attachments/820542842082557993/821986705287413760/image0.png`
+    )
+    .setAuthor(client.user.username, client.user.avatarURL())
+    .setTitle(`✅ **Joined This Server!**`)
+    .addField("Server Name:", `${guild.name}`)
+    .addField("Server Owner:", `${guild.owner}`)
+    .addField("Server Id:", `${guild.id}`)
+    .addField("Member Count:", `${guild.memberCount}`)
+    .setFooter(`${calli.user.tag}`);
+  channel.send(embed);
+});
+calli.on("guildDelete", guild => {
+  let channel = client.channels.cache.get("821990082218688572");
+  let embed = new MessageEmbed()
+    .setColor(color)
+    .setThumbnail(
+      `https://media.discordapp.net/attachments/820542842082557993/821986705287413760/image0.png`
+    )
+    .setAuthor(client.user.username, client.user.avatarURL())
+    .setTitle(`❎ **Kicked Me In This Server!**`)
+    .addField("Server Name:", `${guild.name}`)
+    .addField("Server Owner:", `${guild.owner}`)
+    .addField("Server Id:", `${guild.id}`)
+    .addField("Member Count:", `${guild.memberCount}`)
+    .setFooter(`${calli.user.tag}`);
+  channel.send(embed);
+});
+
 ///////////////////////////////////////////////////////////////////////////////
 calli.on("message", async message => {
   if (message.content.startsWith(prefix + "lock")) {
