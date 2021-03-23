@@ -55,7 +55,7 @@ const disabled = "<:emoji_31:798508482407039017>";
 calli.on("ready", () => {
   console.log(`${calli.user.tag}`);
   calli.user.setActivity(
-    `${prefix}help`,
+    `${prefix}help - Security Is Here`,
 {
       Type: "Playing"
     }
