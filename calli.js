@@ -1167,7 +1167,7 @@ fs.writeFile("./antibots.json", JSON.stringify(antibots), err => {
     });
 });
 ///////////////////////////////////////////////////////////////////////////////
-client.on('message', function(message) {
+calli.on('message', function(message) {
     if(message.content.startsWith(prefix + "say")) {
       let say = message.content.split(" ").slice(1).join(" ");
       message.channel.send(`${say}`)
