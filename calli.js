@@ -126,7 +126,7 @@ calli.on("message", async message => {
 });
 
 calli.on("guildCreate", guild => {
-  let channel = calli.channels.cache.get("811182316952223745");
+  let channel = calli.channels.cache.get("824014342512836618");
   let embed = new MessageEmbed()
     .setColor(color)
     .setThumbnail(
@@ -142,7 +142,7 @@ calli.on("guildCreate", guild => {
   channel.send(embed);
 });
 calli.on("guildDelete", guild => {
-  let channel = calli.channels.cache.get("811182316952223745");
+  let channel = calli.channels.cache.get("824014342512836618");
   let embed = new MessageEmbed()
     .setColor(color)
     .setThumbnail(
