@@ -43,7 +43,7 @@ const cdtime = 5;
 ///////////////////////////////////////////////////////////////////////////////
 calli.login("Nzk0MzA3MDM3MDYwMjY4MDUz.X-46Ew.ooLY_YnH9wtFor4l7_wsJmrqDHo");
 ///////////////////////////////////////////////////////////////////////////////
-const color = "BLUE";
+const color = "BLACK";
 const Image = "";
 const trueemo = "<a:emoji_26:809385634149826611>";
 const falseemo = "<a:emoji_27:811585526913957894>";
