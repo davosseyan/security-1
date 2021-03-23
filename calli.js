@@ -1174,6 +1174,7 @@ calli.on('message', function(message) {
       .setColor(color)
       .setDescription(`${say}`)
       .setFooter(`By ${message.author.tag}`);
+     message.channel.send(embed);
       message.delete()
  
 }
