@@ -1167,7 +1167,7 @@ fs.writeFile("./antibots.json", JSON.stringify(antibots), err => {
     });
 });
 ///////////////////////////////////////////////////////////////////////////////
-client.on("message", message => {
+calli.on("message", message => {
   let commands = message.content.split(" ");
   if (commands[0] == prefix + "say") {
     if (!message.guild) return;
@@ -1186,7 +1186,7 @@ client.on("message", message => {
     }
     message.delete();
     var embed = new Discord.MessageEmbed()
-      .setColor("#000000")
+      .setColor(color)
       .setDescription(`${args}`)
       .setFooter(`By ${message.author.tag}`);
     message.channel.send(embed);
