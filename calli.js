@@ -1169,16 +1169,9 @@ fs.writeFile("./antibots.json", JSON.stringify(antibots), err => {
 ///////////////////////////////////////////////////////////////////////////////
 calli.on('message', function(message) {
     if(message.content.startsWith(prefix + "say")) {
-     if (!message.guild) return;
-    if (!message.guild.member(message.author).hasPermission("MANAGE_MESSAGES"))
-      return message.reply("**You Dont Have `MANAGE_MESSAGES` Permission .**");
-    if (!message.guild.member(client.user).hasPermission("MANAGE_MESSAGES"))
-      return message.reply(
-        "Please Check My Role Permission To `MANAGE_MESSAGES`"
-      );
       let say = message.content.split(" ").slice(1).join(" ");
         var embed = new Discord.MessageEmbed()
-      .setColor("#000000")
+      .setColor(color)
       .setDescription(`${say}`)
       .setFooter(`By ${message.author.tag}`);
       message.delete()
