@@ -41,7 +41,7 @@ const prefix = "D!";
 const cooldown = new Set();
 const cdtime = 5;
 ///////////////////////////////////////////////////////////////////////////////
-calli.login("Nzk0MzA3MDM3MDYwMjY4MDUz.X-46Ew.ooLY_YnH9wtFor4l7_wsJmrqDHo");
+calli.login("Nzk0MzA3MDM3MDYwMjY4MDUz.X-46Ew.JHeKwHFmx-YXzxG3Hwe5vC6flds");
 ///////////////////////////////////////////////////////////////////////////////
 const color = "BLACK";
 const Image = "";
