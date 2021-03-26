@@ -77,10 +77,6 @@ calli.on("message", async message => {
     let help = new Discord.MessageEmbed()
       .setColor(color)
       .setImage(Image)
-      .setTitle(`Click Here To Add : ${calli.user.username}`)
-      .setURL(
-        `https://discord.com/api/oauth2/authorize?client_id=${calli.user.id}&permissions=8&scope=bot`
-      )
       .setThumbnail(message.member.user.displayAvatarURL({ dynamic: true }))
       .setDescription(`
 **Info Commands**
@@ -112,7 +108,7 @@ calli.on("message", async message => {
 
 \`${prefix}settings\`
 
-
+[Website](https://ripe-perpetual-digestion.glitch.me/) - [Add Bot](https://discord.com/oauth2/authorize?client_id=794307037060268053&permissions=8&scope=bot) - [Support](https://discord.gg/5jXyQZMRjH)
       `);
     message.channel.send(help);
   }
