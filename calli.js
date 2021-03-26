@@ -84,17 +84,20 @@ calli.on("message", async message => {
       .setThumbnail(message.member.user.displayAvatarURL({ dynamic: true }))
       .setDescription(`
 **Info Commands**
+
 \`${prefix}botinfo\`
 \`${prefix}userinfo\`
 \`${prefix}serverinfo\`
 \`${prefix}invite\`
 **Moderation Commands**
+
 \`${prefix}lock\`
 \`${prefix}unlock\`
 \`${prefix}ban\` : @User
 \`${prefix}kick\` : @User
 \`${prefix}unban\` : Id/all
 **Security Number**
+
 \`${prefix}anti kick\`: **Number**
 \`${prefix}anti ban\`: **Number**
 \`${prefix}anti channelD\`: **Number**
@@ -103,8 +106,10 @@ calli.on("message", async message => {
 \`${prefix}anti roleC\`: **Number**
 \`${prefix}anti time\`: **Number**
 **Security On/Off**
+
 \`${prefix}anti bot\`: **on-off**
 **Security**
+
 \`${prefix}settings\`
 
 
