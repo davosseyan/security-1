@@ -79,21 +79,21 @@ calli.on("message", async message => {
       .setImage(Image)
       .setThumbnail(message.member.user.displayAvatarURL({ dynamic: true }))
       .setDescription(`
-**Info Commands**
 
+**Info Commands**
 \`${prefix}botinfo\`
 \`${prefix}userinfo\`
 \`${prefix}serverinfo\`
 \`${prefix}invite\`
-**Moderation Commands**
 
+**Moderation Commands**
 \`${prefix}lock\`
 \`${prefix}unlock\`
 \`${prefix}ban\` : @User
 \`${prefix}kick\` : @User
 \`${prefix}unban\` : Id/all
-**Security Number**
 
+**Security Number**
 \`${prefix}anti kick\`: **Number**
 \`${prefix}anti ban\`: **Number**
 \`${prefix}anti channelD\`: **Number**
@@ -101,11 +101,11 @@ calli.on("message", async message => {
 \`${prefix}anti roleD\`: **Number**
 \`${prefix}anti roleC\`: **Number**
 \`${prefix}anti time\`: **Number**
+
 **Security On/Off**
-
 \`${prefix}anti bot\`: **on-off**
-**Security**
 
+**Security**
 \`${prefix}settings\`
 
 [Website](https://ripe-perpetual-digestion.glitch.me/) - [Add Bot](https://discord.com/oauth2/authorize?client_id=794307037060268053&permissions=8&scope=bot) - [Support](https://discord.gg/5jXyQZMRjH)
