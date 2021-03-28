@@ -1116,9 +1116,8 @@ calli.on("message", message => {
     setTimeout(() => {
       cooldown.delete(message.author.id);
     }, cdtime * 1000);
-    if (message.author.id !== message.guild.ownerID)
+    if (message.author.id !== message.guild.ownerID) return message.channel.send("Sorry This Command Only For Servers.");
     if (!message.channel.guild)
-      return message.channel.send("Sorry This Command Only For Servers.");
     let embed = new Discord.MessageEmbed()
       .setTitle(`Click Here To Add : ${calli.user.username}`)
       .setURL(
