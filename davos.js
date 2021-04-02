@@ -80,19 +80,19 @@ calli.on("message", async message => {
       .setThumbnail(message.member.user.displayAvatarURL({ dynamic: true }))
       .setDescription(`
 
-:emoji_91~5:827492208809738250**Info Commands**
+  **Info Commands**
 \`${prefix}botinfo\`
 \`${prefix}userinfo\`
 \`${prefix}serverinfo\`
 \`${prefix}invite\`
 
-:emoji_91~5:827492208809738250**Moderation Commands**
-\`${prefix}lock\`:disible:827492933309300748
-\`${prefix}unlock\`:enable:827493075022381068
+  **Moderation Commands**
+\`${prefix}lock\`
+\`${prefix}unlock\`
 \`${prefix}ban\` : @User
 \`${prefix}kick\` : @User
 
-:emoji_91~5:827492208809738250**Security Number**
+  **Security Number**
 \`${prefix}anti kick\`: **Number**
 \`${prefix}anti ban\`: **Number**
 \`${prefix}anti channelD\`: **Number**
@@ -101,10 +101,10 @@ calli.on("message", async message => {
 \`${prefix}anti roleC\`: **Number**
 \`${prefix}anti time\`: **Number**
 
-:emoji_91~5:827492208809738250**Security On/Off**
+  **Security On/Off**
 \`${prefix}anti bot\`: **on-off**
 
-:emoji_91~5: 827492208809738250**Security**
+  **Security**
 \`${prefix}settings\`
 
 [Website](https://ripe-perpetual-digestion.glitch.me/) - [Add Bot](https://discord.com/api/oauth2/authorize?client_id=794307037060268053&permissions=8&scope=bot) - [Support](https://discord.gg/VfQ7GBKT3K)
