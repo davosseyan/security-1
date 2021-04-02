@@ -41,7 +41,7 @@ const prefix = "D!";
 const cooldown = new Set();
 const cdtime = 5;
 ///////////////////////////////////////////////////////////////////////////////
-calli.login("Nzk0MzA3MDM3MDYwMjY4MDUz.X-46Ew.q_SdJBFiwBHIOc6h3h12ewNCbOc");
+calli.login("Nzk0MzA3MDM3MDYwMjY4MDUz.X-46Ew.CoWGyUUxGB3gpo7DyAmscbHrS7o");
 ///////////////////////////////////////////////////////////////////////////////
 const color = "BLACK";
 const Image = "";
@@ -55,7 +55,7 @@ const disabled = "<:emoji_31:798508482407039017>";
 calli.on("ready", () => {
   console.log(`${calli.user.tag}`);
   calli.user.setActivity(
-    `${prefix}help - Security Is Here`,
+    `${prefix}help 
 {
       Type: "Playing"
     }
@@ -80,20 +80,19 @@ calli.on("message", async message => {
       .setThumbnail(message.member.user.displayAvatarURL({ dynamic: true }))
       .setDescription(`
 
-**Info Commands**
+:emoji_91~5:827492208809738250**Info Commands**
 \`${prefix}botinfo\`
 \`${prefix}userinfo\`
 \`${prefix}serverinfo\`
 \`${prefix}invite\`
 
-**Moderation Commands**
-\`${prefix}lock\`
-\`${prefix}unlock\`
+:emoji_91~5:827492208809738250**Moderation Commands**
+\`${prefix}lock\`:disible:827492933309300748
+\`${prefix}unlock\`:enable:827493075022381068
 \`${prefix}ban\` : @User
 \`${prefix}kick\` : @User
-\`${prefix}unban\` : Id/all
 
-**Security Number**
+:emoji_91~5:827492208809738250**Security Number**
 \`${prefix}anti kick\`: **Number**
 \`${prefix}anti ban\`: **Number**
 \`${prefix}anti channelD\`: **Number**
@@ -102,13 +101,13 @@ calli.on("message", async message => {
 \`${prefix}anti roleC\`: **Number**
 \`${prefix}anti time\`: **Number**
 
-**Security On/Off**
+:emoji_91~5:827492208809738250**Security On/Off**
 \`${prefix}anti bot\`: **on-off**
 
-**Security**
+:emoji_91~5: 827492208809738250**Security**
 \`${prefix}settings\`
 
-[Website](https://ripe-perpetual-digestion.glitch.me/) - [Add Bot](https://discord.com/oauth2/authorize?client_id=794307037060268053&permissions=8&scope=bot) - [Support](https://discord.gg/5jXyQZMRjH)
+[Website](https://ripe-perpetual-digestion.glitch.me/) - [Add Bot](https://discord.com/api/oauth2/authorize?client_id=794307037060268053&permissions=8&scope=bot) - [Support](https://discord.gg/VfQ7GBKT3K)
       `);
     message.channel.send(help);
   }
