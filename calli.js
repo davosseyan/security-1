@@ -63,35 +63,33 @@ calli.on("ready", () => {
 });
 
 ///////////////////////////////////////////////////////////////////////////////
+
 calli.on("message", async message => {
   if (message.content.startsWith(prefix + "help")) {
-    if (cooldown.has(message.author.id)) {
-      return message.channel.send(`You have to wait 5 seconds`).then(m => {
-        m.delete({ timeout: cdtime * 600 });
-      });
+if (cooldown.has(message.author.id)) {
+      return message.channel.send(`wait for 5 second`).then(m=>{m.delete({timeout:cdtime * 600})})
     }
+
     cooldown.add(message.author.id);
+
     setTimeout(() => {
       cooldown.delete(message.author.id);
     }, cdtime * 1000);
     let help = new Discord.MessageEmbed()
-      .setColor(color)
+    .setColor(color)
       .setImage(Image)
       .setThumbnail(message.member.user.displayAvatarURL({ dynamic: true }))
       .setDescription(`
-
 **Info Commands**
 \`${prefix}botinfo\`
 \`${prefix}userinfo\`
 \`${prefix}serverinfo\`
 \`${prefix}invite\`
-
 **Moderation Commands**
 \`${prefix}lock\`
 \`${prefix}unlock\`
 \`${prefix}ban\` : @User
 \`${prefix}kick\` : @User
-
 **Security Number**
 \`${prefix}anti kick\`: **Number**
 \`${prefix}anti ban\`: **Number**
@@ -100,18 +98,16 @@ calli.on("message", async message => {
 \`${prefix}anti roleD\`: **Number**
 \`${prefix}anti roleC\`: **Number**
 \`${prefix}anti time\`: **Number**
-
 **Security On/Off**
 \`${prefix}anti bot\`: **on-off**
-
 **Security**
 \`${prefix}settings\`
-
 [Website](https://ripe-perpetual-digestion.glitch.me/) - [Add Bot](https://discord.com/api/oauth2/authorize?client_id=794307037060268053&permissions=8&scope=bot) - [Support](https://discord.gg/VfQ7GBKT3K)
-      `);
+`)
     message.channel.send(help);
   }
 });
+
 ///////////////////////////////////////////////////////////////////////////////
 calli.on("message", async message => {
   if (message.content.startsWith(prefix + "invite")) {
