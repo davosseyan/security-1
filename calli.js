@@ -80,16 +80,20 @@ if (cooldown.has(message.author.id)) {
       .setImage(Image)
       .setThumbnail(message.member.user.displayAvatarURL({ dynamic: true }))
       .setDescription(`
+    
 **Info Commands**
 \`${prefix}botinfo\`
 \`${prefix}userinfo\`
 \`${prefix}serverinfo\`
 \`${prefix}invite\`
+
 **Moderation Commands**
 \`${prefix}lock\`
 \`${prefix}unlock\`
 \`${prefix}ban\` : @User
 \`${prefix}kick\` : @User
+\`${prefix}unban\` : Id/all
+
 **Security Number**
 \`${prefix}anti kick\`: **Number**
 \`${prefix}anti ban\`: **Number**
@@ -97,11 +101,13 @@ if (cooldown.has(message.author.id)) {
 \`${prefix}anti channelC\`: **Number**
 \`${prefix}anti roleD\`: **Number**
 \`${prefix}anti roleC\`: **Number**
-\`${prefix}anti time\`: **Number**
+
 **Security On/Off**
 \`${prefix}anti bot\`: **on-off**
+
 **Security**
-\`${prefix}settings\`
+\`${prefix}settings\` 
+
 [Website](https://ripe-perpetual-digestion.glitch.me/) - [Add Bot](https://discord.com/api/oauth2/authorize?client_id=794307037060268053&permissions=8&scope=bot) - [Support](https://discord.gg/VfQ7GBKT3K)
 `)
     message.channel.send(help);
