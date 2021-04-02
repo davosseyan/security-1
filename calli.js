@@ -41,7 +41,7 @@ const prefix = "D!";
 const cooldown = new Set();
 const cdtime = 5;
 ///////////////////////////////////////////////////////////////////////////////
-calli.login("");
+calli.login("Nzk0MzA3MDM3MDYwMjY4MDUz.X-46Ew.HTSvMnvQX2bRlLLFihdKvWrGAls");
 ///////////////////////////////////////////////////////////////////////////////
 const color = "BLACK";
 const Image = "";
@@ -86,14 +86,14 @@ if (cooldown.has(message.author.id)) {
 \`${prefix}userinfo\`
 \`${prefix}serverinfo\`
 \`${prefix}invite\`
-
+<a:loading3:781886959600533565>
  <a:emoji_34:766297423126593628>**Moderation Commands**
 \`${prefix}lock\`
 \`${prefix}unlock\`
 \`${prefix}ban\` : @User
 \`${prefix}kick\` : @User
 \`${prefix}unban\` : Id/all
-
+<a:loading3:781886959600533565>
  <a:emoji_34:766297423126593628>**Security Number**
 \`${prefix}anti kick\`: **Number**
 \`${prefix}anti ban\`: **Number**
@@ -101,14 +101,14 @@ if (cooldown.has(message.author.id)) {
 \`${prefix}anti channelC\`: **Number**
 \`${prefix}anti roleD\`: **Number**
 \`${prefix}anti roleC\`: **Number**
-
+<a:loading3:781886959600533565>
  <a:emoji_34:766297423126593628>**Security On/Off**
 \`${prefix}anti bot\`: **on-off**
-
+<a:loading3:781886959600533565>
  <a:emoji_34:766297423126593628>**Security**
 \`${prefix}settings\` 
-
-[Website](https://ripe-perpetual-digestion.glitch.me/) - [Add Bot](https://discord.com/api/oauth2/authorize?client_id=794307037060268053&permissions=8&scope=bot) - [Support](https://discord.gg/VfQ7GBKT3K)
+<a:loading3:781886959600533565>
+[Website](https://ripe-perpetual-digestion.glitch.me/) - [Add Bot](https://discord.com/api/oauth2/authorize?client_id=794307037060268053&permissions=8&scope=bot) - [Support](https://discord.gg/9sB7BuqNSm)
 `)
     message.channel.send(help);
   }
