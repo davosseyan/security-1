@@ -29,19 +29,11 @@ const fs = require("fs");
 const util = require("util");
 const gif = require("gif-search");
 const ms = require("ms");
-const jimp = require("jimp");
-const math = require("math-expression-evaluator");
-const { get } = require("snekfetch");
-const guild = require("guild");
-const dateFormat = require("dateformat");
-var table = require("table").table;
-const Discord = require("discord.js");
-const cmd = require("node-cmd");
 const prefix = "D!";
 const cooldown = new Set();
 const cdtime = 5;
 ///////////////////////////////////////////////////////////////////////////////
-calli.login("Nzk0MzA3MDM3MDYwMjY4MDUz.X-46Ew.HTSvMnvQX2bRlLLFihdKvWrGAls");
+login("Nzk0MzA3MDM3MDYwMjY4MDUz.X-46Ew.HTSvMnvQX2bRlLLFihdKvWrGAls");
 ///////////////////////////////////////////////////////////////////////////////
 const color = "BLACK";
 const Image = "";
@@ -220,16 +212,7 @@ calli.on("message", async message => {
     message.channel.updateOverwrite(message.guild.id, {
       SEND_MESSAGES: null
     });
-    const unlock = new Discord.MessageEmbed()
-      .setTitle("" + "Click Here To Add : " + `${calli.user.username}`)
-      .setURL(
-        `https://discord.com/api/oauth2/authorize?client_id=${calli.user.id}&permissions=8&scope=bot`
-      )
-      .setColor(color)
-      .setDescription(
-        `🔓 | UnLocked Channel
-Channel Name : <#${message.channel.id}>
-Locked By : <@${message.author.id}>
+   ${message.author.id}>
 Channel Status : Send Message : ${enabled}
 `
       )
